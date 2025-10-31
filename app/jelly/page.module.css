@@ -1,0 +1,12 @@
+.description {
+  text-align: center;
+  color: #e91e63;
+  font-size: 2rem;
+  margin-block: 3rem;
+}
+
+.layout {
+  padding: 2rem;
+  background-color: #fff0f6;
+  min-height: 100vh;
+}

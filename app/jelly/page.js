@@ -1,13 +1,16 @@
-// https://jelly-belly-wiki.netlify.app/
+import JellyList from "./jelly-list";
 import styles from "./page.module.css";
 
 export default async function Home() {
+  const dataResp = await fetch('https://jellybellywikiapi.onrender.com/api/Beans')
+  const data = await dataResp.json()
+
   return (
-    <div className={styles.homeContainer}>
-      <h1 className={styles.title}>Welcome to the Jelly Store</h1>
+    <div>
       <p className={styles.description}>
         Explore our wide variety of delicious jellies!
       </p>
+      <JellyList items={data.items} />
     </div>
   );
 }

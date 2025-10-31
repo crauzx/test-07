@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  images: {
+    domains: ['cdn-tp1.mozu.com'],
+  },
   reactCompiler: true,
 };
 
